@@ -13,7 +13,7 @@
       <p>Wind Speed: {{ weatherData.wind.speed }} m/s</p>
     </div>
 
-    <p v-if="errorMessage">An error occurred: {{ errorMessage }}</p>
+    <p v-if="errorMessage" class="error">An error occurred: {{ errorMessage }}</p>
   </div>
 </template>
 
