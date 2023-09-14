@@ -2,7 +2,7 @@
   <div>
     <h1>Weather App</h1>
     <label for="cityInput">Enter City: </label>
-    <input id="cityInput" v-model="cityName" @input="clearWeatherData" />
+    <input id="cityInput" v-model="cityName" @input="clearWeatherData" @keyup.enter="getWeatherData" />
     <button @click="getWeatherData">Get Weather</button>
 
     <div v-if="weatherData">
